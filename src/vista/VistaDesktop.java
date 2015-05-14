@@ -13,7 +13,7 @@ import java.util.Iterator;
 import javafx.beans.value.ChangeListener;
 import javax.swing.JOptionPane;
 import util.DTO;
-import util.utileria;
+import util.Util;
 
 /**
  *
@@ -21,7 +21,7 @@ import util.utileria;
  */
 public class VistaDesktop extends javax.swing.JFrame {
     
-    private  utileria util;
+    private  Util util;
     private DTO dto;
     private ControladorDesktop cD;
     
@@ -44,7 +44,7 @@ public class VistaDesktop extends javax.swing.JFrame {
     private void init() {
  
         
-        util = new utileria();
+        util = new Util();
         
         comboOperaciones.addItemListener(new ItemChangeListener());
         

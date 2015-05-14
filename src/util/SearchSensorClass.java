@@ -13,7 +13,7 @@ import java.util.ArrayList;
  *
  * @author Allan
  */
-public class BuscaNombres {
+public class SearchSensorClass {
     
     private static final char DOT = '.';
 
@@ -55,4 +55,16 @@ public class BuscaNombres {
         return classes;
     }
 
+    public ArrayList<String> finder(File folder) {
+
+        ArrayList<String> classes = new ArrayList<>();
+        for (File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                finder(fileEntry);
+            } else {
+                classes.add(fileEntry.getName());
+            }
+        }
+        return classes;
+    }
 }

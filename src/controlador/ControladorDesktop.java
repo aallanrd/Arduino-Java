@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package controlador;
 
-import java.util.ArrayList;
 import modelo.*;
 import util.DTO;
-import util.utileria;
+import util.Util;
 
 /**
  *
@@ -19,10 +13,10 @@ public class ControladorDesktop implements ControladorDesktopI{
 
     private DTO datos;
     private CreaSensorI creaopI;
-    private utileria util ;
+    private Util util ;
     
     public  ControladorDesktop (){
-        util = new utileria();
+        util = new Util();
     }
     
    

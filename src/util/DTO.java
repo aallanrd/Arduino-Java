@@ -39,7 +39,7 @@ public class DTO {
     }
     
     public boolean addOperando(String op){
-        boolean integer = new utileria().isInteger(op);
+        boolean integer = new Util().isInteger(op);
         if(integer){
             operandos.add(op);   
         }

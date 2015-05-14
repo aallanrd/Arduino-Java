@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Allan
  */
 
-public class utileria {
+public class Util {
     
     
     public ArrayList operacionesDisponibles;
@@ -21,7 +21,7 @@ public class utileria {
     
     
     
-    public utileria() {
+    public Util() {
         
     }
     
@@ -81,7 +81,7 @@ public class utileria {
     public ArrayList cargarClases(){
         
         this.operacionesDisponibles = new ArrayList();
-        BuscaNombres bn = new BuscaNombres();
+        SearchSensorClass bn = new SearchSensorClass();
         ArrayList<Class<?>> find = bn.find(operation_package);
         
         for ( int i = 0 ;i < find.size();i++){

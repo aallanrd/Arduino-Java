@@ -22,7 +22,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.Iterator;
-import javafx.beans.value.ChangeListener;
+
 import javax.swing.JOptionPane;
 import util.DTO;
 import util.Util;
@@ -296,7 +296,7 @@ public class VistaDesktop extends javax.swing.JFrame {
     private java.awt.List listaOperaciones;
     // End of variables declaration//GEN-END:variables
    
-    ChangeListener changeListner;
+   // ChangeListener changeListner;
 
     //=====================================================
 
